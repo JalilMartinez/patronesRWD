@@ -63,7 +63,7 @@ p {
     }
     .sidebar-1{
         grid-column: 1/2;
-        grid-area: izq;
+        grid-area: izq;/*para trabajar con areas*/
         
     }
 
