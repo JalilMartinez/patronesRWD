@@ -49,3 +49,22 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width:768px) {
+    .contenedor-grid{
+        display: grid;grid-template-areas: "izq centro der";/*para trabajar con areas*/
+        grid-template-columns: 20% 60% 20%;/*primer contenido de contenedor-grid| segundo contenido| tercer contenido */
+        grid-auto-flow: column;/*psra que no se hagan dos rows*/
+        column-gap: 2rem;
+
+    }
+    .contenedor-principal{
+        grid-column: 2/3;
+        grid-area: centro;/*para trabajar con areas*/
+    }
+    .sidebar-1{
+        grid-column: 1/2;
+        grid-area: izq;
+        
+    }
+
+}
