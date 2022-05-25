@@ -48,3 +48,18 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width:768px) {
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 4rem;
+        grid-auto-flow: column;/*lo arregla rapido y facil*/
+    }
+    aside {
+        grid-column: 1 / 2;
+        grid-row: 1/2;/*para arreglarlo*/
+    }
+    article {/*para arreglarlo*/
+        grid-column: 2 / 3;/*para arreglarlo*/
+    }
+}
